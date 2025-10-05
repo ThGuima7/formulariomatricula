@@ -1,205 +1,209 @@
-=<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matrículas Estrela do Amanhã</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/styles/index.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="app">
         <main>
-
             <div class="main-container">
                 <div class="back">
                     <img src="icons/setaesquerda.svg" alt="Voltar">
                     <span>Voltar</span>
                 </div>
-                <h1> Formulário de Matrícula </h1>
-                <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã
-                </p>
 
+                <h1>Formulário de Matrícula</h1>
+                <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã</p>
 
                 <form> 
 
-                    <fieldset class ="child-info">
-                        <legend> Informações da Criança </legend>
+              
+                    <fieldset class="child-info">
+                        <legend>Informações da Criança</legend>
 
                         <div class="input-wrapper">
                             <label for="fullname">Nome Completo</label>
-                            <input id="fullname" type="" name="nome" placeholder="Qual o nome da criança?">
+                            <input id="fullname" type="text" name="nome" placeholder="Qual o nome da criança?">
                         </div>
 
-                          <div class="input-wrapper">
+                        <div class="input-wrapper">
                             <label for="birth">Data Nascimento</label>
-                            <input id="birth" type="date" name="data-nasc" lang="pt-BR">>
+                            <input id="birth" type="date" name="data-nasc" lang="pt-BR">
                         </div>
 
-                          <div class="select-wrapper">
+                        <div class="select-wrapper">
                             <label for="gender">Sexo</label>
                             <select id="gender" name="sexo">
                                 <option value="F">Feminino</option>
                                 <option value="M">Masculino</option>
-
-                               
                             </select>
                         </div>
 
-                           <div class="textarea-wrapper">
+                        <div class="textarea-wrapper">
                             <label for="medical-info">Informações Médicas</label>
-                            <textarea id="medical-info" name="d" cols="30" rows="5" placeholder="A criança possui alguma condição médica?"> </textarea>
+                            <textarea id="medical-info" name="d" cols="30" rows="5" placeholder="A criança possui alguma condição médica?"></textarea>
                         </div>
 
-                               <div class="droparea-wrapper">
+                        <div class="droparea-wrapper">
                             <label for="birth-file">Certidão de Nascimento</label>
-                            <div class="dropzone" type="file" name="">
-
+                            <div class="dropzone">
                                 <img src="icons/cloud.svg" alt="cloud">
                                 <p>Arraste e solte o arquivo aqui ou clique para selecionar</p>
                             </div>
-                        
-                
-                            <input id="birth-file" type="file" name="">
+                            <input id="birth-file" type="file" name="birth-file">
                         </div>
-
-
-
-
-
 
                     </fieldset>
 
-
                     <fieldset class="address">
-                        <legend> Endereço </legend>
+                        <legend>Endereço</legend>
 
-                         <div class="input-wrapper flex-2">
+                        <div class="input-wrapper flex-2">
                             <label for="cep">CEP</label>
                             <input id="cep" type="text" name="cep" placeholder="99999-999">
                         </div>
-<div class ="flex">
-                         <div class="input-wrapper flex-1">
-                            <label for="street">Nome Completo</label>
-                            <input id="street" type="" name="rua" value="Rua das Flores" disabled>
+
+                        <div class="flex">
+                            <div class="input-wrapper flex-1">
+                                <label for="street">Rua</label>
+                                <input id="street" type="text" name="rua" value="Rua das Flores" disabled>
+                            </div>
+                            <div class="input-wrapper flex-1">
+                                <label for="number">Número</label>
+                                <input id="number" type="number" name="numero">
+                            </div>
                         </div>
 
-                         <div class="input-wrapper flex-1">
-                            <label for="number">Numero</label>
-                            <input id="number" type="number" name="rua">
+                        <div class="flex">
+                            <div class="input-wrapper flex-1">
+                                <label for="city">Cidade</label>
+                                <input id="city" type="text" name="city" value="São Paulo" disabled>
+                            </div>
+                            <div class="input-wrapper flex-1">
+                                <label for="state">Estado</label>
+                                <input id="state" type="text" name="estado" value="SP" disabled>
+                            </div>
                         </div>
-
-</div>
-
-
-
-<div class ="flex">
-                         <div class="input-wrapper flex-1">
-                            <label for="city">Cidade</label>
-                            <input id="city" type="" name="city" value="São Paulo" disabled>
-                        </div>
-
-                         <div class="input-wrapper flex-1">
-                            <label for="state">Numero</label>
-                            <input id="state" type="text" name="estado" value="SP" disabled>
-                        </div>
-
-</div>
-
-
 
                     </fieldset>
 
-
+               
                     <fieldset class="guardian">
-                        <legend> Informações do responsável </legend>
+                        <legend>Informações do responsável</legend>
 
-                         <div class="input-wrapper">
+                        <div class="input-wrapper">
                             <label for="guardian">Nome do responsável</label>
-                            <input id="guardian" type="text" name="guardian" >
-                        <small> Principal responsável legal e contato de emergência</small>
+                            <input id="guardian" type="text" name="guardian">
+                            <small>Principal responsável legal e contato de emergência</small>
                         </div>
 
-
-                            <div class="input-wrapper">
+                        <div class="input-wrapper">
                             <label for="phone">Telefone do responsável</label>
-                            <input id="phone" type="text" name="numero" placeholder="(99) 9999-9999" required >
-                        <small> Telefone</small>
+                            <input id="phone" type="text" name="numero" placeholder="(99) 9999-9999" required>
+                            <small>Telefone</small>
                         </div>
 
-
-                           <div class="input-wrapper">
+                        <div class="input-wrapper">
                             <label for="email">Email</label>
                             <input id="email" type="email" name="email">
-                        <div class="error"> 
-                        <img src="assets/icons/erroemail.png" alt="Ícone de Erro">
-                        <span> E-mail Invalido </span>
-                        </div>>
+                            <div class="error"> 
+                                <img src="assets/icons/erroemail.png" alt="Ícone de Erro">
+                                <span>E-mail Inválido</span>
+                            </div>
                         </div>
 
                     </fieldset>
 
-
-
+              
                     <fieldset class="enroll-options">
-                        <legend> Opções de Matrícula </legend>
+                        <legend>Opções de Matrícula</legend>
 
-                            <div class="radio-wrapper">
-                                <label for="plan">Selecione o Turno</label>
-                                <div class="radio-wrapper">
-                                    
-                                    <div class="radio-inner">
-                                        <div class="radio-image"></div>
-                                        <input id="morning" type="radio" name="study-shift" value="morning">
-                                        <img src="icons/nuvem.svg" alt="Nuvem">                                     
-                                        <label for="morning" >Manhã</label>
-                                    </div> 
+                        <label>Selecione o Turno</label>
+                        <div class="radio-wrapper">
+                            <div class="radio-inner">
+                                <div class="radio-image"></div>
+                                <input id="morning-shift" type="radio" name="study-shift" value="morning">
+                                <img src="icons/nuvem.svg" alt="Nuvem">
+                                <label for="morning-shift">Manhã</label>
+                            </div>
+                            <div class="radio-inner">
+                                <div class="radio-image"></div>
+                                <input id="evening-shift" type="radio" name="study-shift" value="evening">
+                                <img src="icons/sun.svg" alt="Sol">
+                                <label for="evening-shift">Tarde</label>
+                            </div>
+                        </div>
 
-                                    <div class="radio-inner">
-                                          <div class="radio-image">
-                                        <div class="radio-image"></div>
-                                        <input id="evening" type="radio" name="study-shift" value="evening">
-                                         <img src="icons/sun.svg" alt="Icone de Sol"> 
-                                        <label for="evening" >Tarde</label>
-                                    </div> 
+                        <label>Selecione o esporte do seu filho</label>
+                        <div class="radio-wrapper">
+                            <div class="radio-inner">
+                                <div class="radio-image"></div>
+                                <input id="futebol" type="radio" name="sport" value="futebol">
+                                <img src="icons/futebol.svg" alt="futebol">
+                                <label for="futebol">Futebol</label>
+                            </div>
+                            <div class="radio-inner">
+                                <div class="radio-image"></div>
+                                <input id="natacao" type="radio" name="sport" value="natacao">
+                                <img src="icons/natacao.svg" alt="natacao">
+                                <label for="natacao">Natação</label>
+                            </div>
 
-                                        
-                                    </div> 
-                                
-                                </div>
-                                
-                                    
-                                
-                                </select>
+                               <div class="radio-inner">
+                                <div class="radio-image"></div>
+                                <input id="basquete" type="radio" name="sport" value="basquete">
+                                <img src="icons/basquete.svg" alt="basquete">
+                                <label for="basquete">basquete</label>
+                            </div>
 
+                              <div class="radio-inner">
+                                <div class="radio-image"></div>
+                                <input id="vollei" type="radio" name="sport" value="vollei">
+                                <img src="icons/vollei.svg" alt="vollei">
+                                <label for="vollei">basquete</label>
+                            </div>
+
+                              <div class="radio-inner">
+                                <div class="radio-image"></div>
+                                <input id="yoga" type="radio" name="sport" value="yoga">
+                                <img src="icons/meditar.svg" alt="vollei">
+                                <label for="yoga">yoga</label>
+                            </div>
+
+
+                             <div class="radio-inner">
+                                <div class="radio-image"></div>
+                                <input id="box" type="radio" name="sport" value="box">
+                                <img src="icons/box.svg" alt="box">
+                                <label for="box">box</label>
+                            </div>
+                        </div>
 
                     </fieldset>
-
-
 
                 </form>
 
             </div>
-
         </main>
         
         <aside>
-            
             <div class="aside-container">
                 <header> 
                     <img src="icons/logo.svg" alt="Logo">
-                    <h2> Porque cada momento de <span>aprendizado</span> conta </h2>
-                    <p> Vagas limitadas! Garanta a matrícula do seu filho hoje mesmo. </p>
+                    <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
+                    <p>Vagas limitadas! Garanta a matrícula do seu filho hoje mesmo.</p>
                 </header>
                 <img src="Illustration.svg" alt="Ilustração lúdica">
-                
             </div>
-
         </aside>
-
-
     </div>
 </body>
 </html>
