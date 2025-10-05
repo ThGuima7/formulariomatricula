@@ -71,6 +71,114 @@
 
 
                     </fieldset>
+
+
+                    <fieldset class="address">
+                        <legend> Endereço </legend>
+
+                         <div class="input-wrapper flex-2">
+                            <label for="cep">CEP</label>
+                            <input id="cep" type="text" name="cep" placeholder="99999-999">
+                        </div>
+<div class ="flex">
+                         <div class="input-wrapper flex-1">
+                            <label for="street">Nome Completo</label>
+                            <input id="street" type="" name="rua" value="Rua das Flores" disabled>
+                        </div>
+
+                         <div class="input-wrapper flex-1">
+                            <label for="number">Numero</label>
+                            <input id="number" type="number" name="rua">
+                        </div>
+
+</div>
+
+
+
+<div class ="flex">
+                         <div class="input-wrapper flex-1">
+                            <label for="city">Cidade</label>
+                            <input id="city" type="" name="city" value="São Paulo" disabled>
+                        </div>
+
+                         <div class="input-wrapper flex-1">
+                            <label for="state">Numero</label>
+                            <input id="state" type="text" name="estado" value="SP" disabled>
+                        </div>
+
+</div>
+
+
+
+                    </fieldset>
+
+
+                    <fieldset class="guardian">
+                        <legend> Informações do responsável </legend>
+
+                         <div class="input-wrapper">
+                            <label for="guardian">Nome do responsável</label>
+                            <input id="guardian" type="text" name="guardian" >
+                        <small> Principal responsável legal e contato de emergência</small>
+                        </div>
+
+
+                            <div class="input-wrapper">
+                            <label for="phone">Telefone do responsável</label>
+                            <input id="phone" type="text" name="numero" placeholder="(99) 9999-9999" required >
+                        <small> Telefone</small>
+                        </div>
+
+
+                           <div class="input-wrapper">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email">
+                        <div class="error"> 
+                        <img src="assets/icons/erroemail.png" alt="Ícone de Erro">
+                        <span> E-mail Invalido </span>
+                        </div>>
+                        </div>
+
+                    </fieldset>
+
+
+
+                    <fieldset class="enroll-options">
+                        <legend> Opções de Matrícula </legend>
+
+                            <div class="radio-wrapper">
+                                <label for="plan">Selecione o Turno</label>
+                                <div class="radio-wrapper">
+                                    
+                                    <div class="radio-inner">
+                                        <div class="radio-image"></div>
+                                        <input id="morning" type="radio" name="study-shift" value="morning">
+                                        <img src="icons/nuvem.svg" alt="Nuvem">                                     
+                                        <label for="morning" >Manhã</label>
+                                    </div> 
+
+                                    <div class="radio-inner">
+                                          <div class="radio-image">
+                                        <div class="radio-image"></div>
+                                        <input id="evening" type="radio" name="study-shift" value="evening">
+                                         <img src="icons/sun.svg" alt="Icone de Sol"> 
+                                        <label for="evening" >Tarde</label>
+                                    </div> 
+
+                                        
+                                    </div> 
+                                
+                                </div>
+                                
+                                    
+                                
+                                </select>
+
+
+                    </fieldset>
+
+
+
                 </form>
 
             </div>
